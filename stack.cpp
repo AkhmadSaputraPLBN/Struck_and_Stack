@@ -20,3 +20,12 @@ int penuh(Stack *S){
 int kosong(Stack *S){
     return (S->Count == 0);
 }
+
+void pop(Stack *S, ItemType *x) {
+    if (kosong(S)) {
+        cout << "Stack kosong!" << endl;
+    } else {
+        --(S->Count);
+              *x = S->Item[S->Count];
+    }
+}
