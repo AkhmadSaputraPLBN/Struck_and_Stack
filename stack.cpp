@@ -12,3 +12,11 @@ typedef struct {
 void awal(Stack *S) {
     S->Count = 0;
 }
+
+int penuh(Stack *S){
+    return (S->Count == MAXSTACK);
+    }
+
+int kosong(Stack *S){
+    return (S->Count == 0);
+}
